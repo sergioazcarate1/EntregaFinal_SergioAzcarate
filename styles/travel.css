@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+* body {
+  background: #1c1c1c;
+  color: beige;
+}
+* body header {
+  overflow: hidden;
+  z-index: 2;
+}
+* body header div {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px;
+  height: 5vh;
+}
+* body header div > a {
+  display: flex;
+  position: absolute;
+  text-decoration: none;
+  color: beige;
+  font-size: 35px;
+  left: 23%;
+}
+* body header div nav {
+  position: absolute;
+  display: flex;
+  left: 65%;
+}
+* body header div nav #current {
+  background-color: rgb(2, 77, 27);
+  border-radius: 5px;
+}
+* body header div nav #current:hover {
+  background: rgb(6, 141, 51);
+}
+* body header div nav a {
+  text-decoration: none;
+  color: beige;
+  margin: 0 15px;
+  padding: 3px;
+  transition: 0.5s;
+  z-index: 3;
+}
+* body header div nav a:hover {
+  background: rgb(6, 141, 51);
+  border-radius: 5px;
+}
+* body main {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4%;
+  width: 80vw;
+  height: 70vh;
+  overflow: hidden;
+  border-radius: 15px;
+}
+* body main section {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  left: 0%;
+}
+* body main section h1 {
+  position: absolute;
+  right: 50%;
+}
+* body main section div {
+  position: relative;
+  display: flex;
+  width: 95%;
+  height: 100%;
+}
+* body main section div #first {
+  width: 40vw;
+  top: 5%;
+  left: 2%;
+}
+* body main section div #first img {
+  width: 35vw;
+  position: absolute;
+  border-radius: 15px;
+  border: 5px solid rgba(0, 0, 0, 0.2274509804);
+}
+* body main section div #first p {
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+  text-align: center;
+}
+* body main section div #second {
+  width: 40vw;
+  top: 5%;
+  left: 2%;
+}
+* body main section div #second img {
+  width: 35vw;
+  position: absolute;
+  border-radius: 15px;
+  border: 5px solid rgba(0, 0, 0, 0.2274509804);
+  bottom: 5%;
+}
+* body main section div #second p {
+  position: absolute;
+  right: 5%;
+  top: 2%;
+  text-align: center;
+}
+* body footer {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+/*# sourceMappingURL=travel.css.map */

@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap");
+
+$color: beige;
+$background: #1c1c1c;
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+
+  body {
+    background: $background;
+    color: $color;
+
+    header {
+      overflow: hidden;
+      z-index: 2;
+
+      div {
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4px;
+        height: 5vh;
+
+        > a {
+          display: flex;
+          position: absolute;
+          text-decoration: none;
+          color: $color;
+          font-size: 35px;
+          left: 23%;
+        }
+
+        nav {
+          position: absolute;
+          display: flex;
+          left: 65%;
+
+          #current {
+            background-color: rgb(2, 77, 27);
+            border-radius: 5px;
+          }
+
+          #current:hover {
+            background: rgb(6, 141, 51);
+          }
+
+          a {
+            text-decoration: none;
+            color: $color;
+            margin: 0 15px;
+            padding: 3px;
+            transition: 0.5s;
+            z-index: 3;
+          }
+
+          a:hover {
+            background: rgb(6, 141, 51);
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+
+    main {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 4%;
+      width: 80vw;
+      height: 70vh;
+      overflow: hidden;
+      border-radius: 15px;
+
+      section {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        left: 0%;
+
+        .item {
+          position: relative;
+          display: flex;
+          width: 95%;
+          height: 100%;
+          left: 2.5%;
+
+          img {
+            width: 65%;
+            border-radius: 15px;
+            border: 5px solid #0000003a;
+          }
+
+          h1 {
+            position: absolute;
+            right: 13.5%;
+          }
+
+          p {
+            position: absolute;
+            right: 0%;
+            top: 5%;
+            max-width: 34%;
+            text-align: center;
+          }
+
+          > a {
+            text-align: center;
+            position: absolute;
+            right: 15%;
+            bottom: 5%;
+            color: chartreuse;
+            text-decoration: none;
+            cursor: pointer;
+            z-index: 10;
+          }
+
+          > a:hover {
+            cursor: pointer;
+          }
+        }
+
+        .arrows {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 100%;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          > a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            text-shadow: #1c1c1c;
+            transition: 0.5s;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    footer {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+    }
+  }
+}
